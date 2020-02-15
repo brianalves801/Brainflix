@@ -1,0 +1,22 @@
+.footer__videos {
+  .footer__all {
+    display: flex;
+    margin-bottom: 24px;
+    .footer__title {
+      margin: 0px;
+    }
+    .footer__video {
+      img {
+        height: 70px;
+        width: 120px;
+      }
+    }
+  }
+}
+.footer__heading {
+  margin-bottom: 40px;
+}
+
+hr {
+  margin-bottom: 40px;
+}
