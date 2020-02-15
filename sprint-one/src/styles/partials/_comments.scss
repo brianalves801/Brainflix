@@ -43,6 +43,9 @@
   display: flex;
 }
 
+.comments {
+  display: flex;
+}
 .comment__buttoncontainer {
   width: 60%;
 }
@@ -53,4 +56,19 @@
   border-radius: 5px;
   background-color: #0095ff;
   color: white;
+}
+.comment__both {
+  margin-left: 10%;
+}
+
+.comment__commentpic {
+  background-color: gray;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.comment__commentpiccontainer {
+  height: 70px;
+  padding-top: 5%;
 }

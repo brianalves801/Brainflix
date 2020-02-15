@@ -220,6 +220,12 @@ hr {
   display: flex;
 }
 
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .comment__buttoncontainer {
   width: 60%;
 }
@@ -233,15 +239,26 @@ hr {
   color: white;
 }
 
+.comment__both {
+  margin-left: 10%;
+}
+
+.comment__commentpic {
+  background-color: gray;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.comment__commentpiccontainer {
+  height: 70px;
+  padding-top: 5%;
+}
+
 body {
   color: black;
   margin: 0em;
   margin: 0;
   padding: 0;
-}
-
-.footer__videos .footer_all .footer__video img {
-  max-height: 50px;
-  max-width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

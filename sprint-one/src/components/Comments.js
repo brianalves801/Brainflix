@@ -23,13 +23,22 @@ export default class Comments extends React.Component {
   render() {
     let threeComments = this.state.commentArray.map(commentObject => {
       return (
-        <div className="comments">
-          <p className="footer__namedate">
+        <>
+          <div className="comment__hr">
             <hr />
-            {commentObject.Name} {commentObject.Date}
-          </p>
-          <p className="footer__comment">{commentObject.Comment}</p>
-        </div>
+          </div>
+          <div className="comments">
+            <div className="comment__commentpiccontainer">
+              <div className="comment__commentpic"></div>
+            </div>
+            <div className="comment__both">
+              <p className="comment__namedate">
+                {commentObject.Name} {commentObject.Date}
+              </p>
+              <p className="comment__comment">{commentObject.Comment}</p>
+            </div>
+          </div>
+        </>
       );
     });
     return (
