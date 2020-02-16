@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Assets/Logo/Logo-brainflix.png";
 import Mohan from "../Assets/Images/Mohan.jpg";
+import Plus from "../Assets/Icons/PNG/Icon-upload.png";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <img className="header__logo" src={Logo} />
 
       <input
-        className="searchbar"
+        className="header__searchbar"
         type="textbox"
         name="searchbar"
         placeholder="Search"

@@ -16,13 +16,15 @@ export default class Video extends React.Component {
   render() {
     let Video = this.props.footerArray.map(footerObject => {
       return (
-        <div className="footer__all">
-          <div className="footer__video">
-            <img src={footerObject.Image}></img>
-          </div>
-          <div className="footer__both">
-            <p className="footer__title">{footerObject.Title}</p>
-            <p className="footer__artist">{footerObject.Artist}</p>
+        <div className="combination">
+          <div className="footer__all">
+            <div className="footer__video">
+              <img src={footerObject.Image}></img>
+            </div>
+            <div className="footer__both">
+              <p className="footer__title">{footerObject.Title}</p>
+              <p className="footer__artist">{footerObject.Artist}</p>
+            </div>
           </div>
         </div>
       );
@@ -30,7 +32,7 @@ export default class Video extends React.Component {
     return (
       <>
         <h3 className="footer__heading">
-          <hr />
+          <hr className="footer__hr" />
           Next Video
         </h3>
         <div className="footer__videos">{Video}</div>

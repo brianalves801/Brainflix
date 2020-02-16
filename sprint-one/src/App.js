@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Comments from "./components/Comments";
 import Footer from "./components/Footer";
+import Maincontent from "./components/Maincontent";
 // import "./styles/style.css";
 
 const footerArray = [
@@ -73,8 +74,15 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Comments commentArray={commentArray} />
-      <Footer footerArray={footerArray} />
+      <div className="container">
+        <div className="combination">
+          <Maincontent />
+          <Comments commentArray={commentArray} />
+        </div>
+        <div className="combo">
+          <Footer footerArray={footerArray} />
+        </div>
+      </div>
     </>
   );
 }
